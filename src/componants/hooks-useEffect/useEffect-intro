@@ -1,0 +1,2 @@
+useEffect handle three life-cycle method
+(componantDidMount,componantDidUpdate,componantDidUnmount)

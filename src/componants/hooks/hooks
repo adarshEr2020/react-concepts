@@ -1,0 +1,5 @@
+Hooks are a new features addition in React version 16.8
+they allow you to use React features without having to write a class 
+Avoid the whole confusion with this keyword 
+Allow you to use stateful logic 
+Orginise the logic inside a componant into reusable isolated units
