@@ -30,12 +30,13 @@ import MouseContainer from "./componants/hooks/hooks-useEffect-with-cleanup/Mous
 import LifecycleA from "./componants/Compo-Mounting-lifecycle-method/LifecycleA";
 import Example from "./componants/Example";
 import Example1 from "./componants/Example1";
+import HookuseReducer from "./componants/hooks/useReducer-hook/HookuseReducer";
 function App() {
   const numbers = [1, 2, 3, 4, 5];
   return (
     <div className="App">
       <h1>Hello React</h1>
-      componant
+
       <GreetFun />
       {/* jsk componant */}
       <Hello />
@@ -73,7 +74,7 @@ function App() {
       {/* index-as-key-Anti-pattern */}
       <PersonList />
       <NumberList numbers={numbers} />
-      {/* Hooks------ */}
+      {/* HOOKS------ */}
       <h2>Hooks</h2>
       {/* <ClassCounter /> */}
       <HookCounter />
@@ -99,10 +100,13 @@ function App() {
       <MouseContainer />
       {/* Lifecycle method  */}
       {/* mounting  */}
-      <LifecycleA />
+      {/* <LifecycleA /> */}
       <h2>Example</h2>
       {/* <Example/> */}
       <Example1 />
+      {/* HOOKS */}
+      {/* useReducer hook */}
+      <HookuseReducer />
     </div>
   );
 }
