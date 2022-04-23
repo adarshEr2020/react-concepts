@@ -31,82 +31,90 @@ import LifecycleA from "./componants/Compo-Mounting-lifecycle-method/LifecycleA"
 import Example from "./componants/Example";
 import Example1 from "./componants/Example1";
 import HookuseReducer from "./componants/hooks/useReducer-hook/HookuseReducer";
+import LayoutEffectHooks from "./componants/hooks/useLayoutEffect/LayoutEffectHooks";
+import Usememo from "./componants/hooks/useMemoHook/Usememo";
+import UseCallbackHook from "./componants/hooks/useCallback/UseCallbackHook";
 function App() {
   const numbers = [1, 2, 3, 4, 5];
   return (
     <div className="App">
       <h1>Hello React</h1>
 
-      <GreetFun />
+      {/* <GreetFun /> */}
       {/* jsk componant */}
-      <Hello />
-      <JsxExample />
+      {/* <Hello /> */}
+      {/* <JsxExample /> */}
       {/* passing props here 
       -- childrean props
       */}
-      <Greet name="Bruce" heroName="Batman">
+      {/* <Greet name="Bruce" heroName="Batman">
         <p>this is children props</p>
-      </Greet>
-      <Greet name="lsl" heroName="Batman">
+      </Greet> */}
+      {/* <Greet name="lsl" heroName="Batman">
         <button>button</button>
-      </Greet>
-      <Welcome name="Bruce" heroName="Batman" />
+      </Greet> */}
+      {/* <Welcome name="Bruce" heroName="Batman" /> */}
       {/* set state componant */}
-      <Message />
-      <Count />
-      {/* destructuring  */}
-      <Study name="diana" subject="React" />
-      <Destructclass name="iliana" heroName="superman" />
+      {/* <Message /> */}
+      {/* <Count /> */}
+      {/* destructuring  * */}
+      {/* <Study name="diana" subject="React" /> */}
+      {/* <Destructclass name="iliana" heroName="superman" /> */}
       {/* event handling */}
-      <FunctionHandler />
-      <ClassClick />
-      <EventBind />
+      {/* <FunctionHandler /> */}
+      {/* <ClassClick /> */}
+      {/* <EventBind /> */}
       {/* methods as props */}
-      <h1>Methods as props</h1>
-      <ParentComponant />
+      {/* <h1>Methods as props</h1> */}
+      {/* <ParentComponant /> */}
       {/* conditional rendring */}
-      <h1>Conditional Rendering</h1>
-      <UserGreeting />
+      {/* <h1>Conditional Rendering</h1> */}
+      {/* <UserGreeting /> */}
       {/* List rendring  */}
-      <h1>List rendring</h1>
-      <NameList />
-      <ProductList />
+      {/* <h1>List rendring</h1> */}
+      {/* <NameList /> */}
+      {/* <ProductList /> */}
       {/* index-as-key-Anti-pattern */}
-      <PersonList />
-      <NumberList numbers={numbers} />
+      {/* <PersonList /> */}
+      {/* <NumberList numbers={numbers} /> */}
       {/* HOOKS------ */}
       <h2>Hooks</h2>
       {/* <ClassCounter /> */}
-      <HookCounter />
+      {/* <HookCounter /> */}
       {/* useState with priv state */}
-      <h2>useState with priv state </h2>
-      <HookCounterTwo />
+      {/* <h2>useState with priv state </h2> */}
+      {/* <HookCounterTwo /> */}
       {/* useState with object */}
-      <h2>useState with object</h2>
-      <HookCounterThree />
+      {/* <h2>useState with object</h2> */}
+      {/* <HookCounterThree /> */}
       {/* useState with array */}
-      <h2>useState with array</h2>
-      <HookCounterFour />
+      {/* <h2>useState with array</h2> */}
+      {/* <HookCounterFour /> */}
       {/* useEffect after render */}
-      <h2>useEffect after render</h2>
+      {/* <h2>useEffect after render</h2> */}
       {/* <HookCounterSix /> */}
-      <HookCounterOne />
+      {/* <HookCounterOne /> */}
       {/*  */}
-      <h2>Run effect only once</h2>
+      {/* <h2>Run effect only once</h2> */}
       {/* <ClassMouse/> */}
       {/* <HookMouse /> */}
       {/* useEffect with cleanup */}
-      <h2>useEffect with cleanup</h2>
-      <MouseContainer />
+      {/* <h2>useEffect with cleanup</h2> */}
+      {/* <MouseContainer /> */}
       {/* Lifecycle method  */}
       {/* mounting  */}
       {/* <LifecycleA /> */}
-      <h2>Example</h2>
+      {/* <h2>Example</h2> */}
       {/* <Example/> */}
-      <Example1 />
+      {/* <Example1 /> */}
       {/* HOOKS */}
       {/* useReducer hook */}
-      <HookuseReducer />
+      {/* <HookuseReducer /> */}
+
+      {/* useLayoutEffect hook */}
+      {/* <LayoutEffectHooks /> */}
+      {/* <Usememo /> */}
+      <UseCallbackHook />
     </div>
   );
 }
