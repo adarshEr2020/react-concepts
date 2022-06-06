@@ -34,8 +34,18 @@ import HookuseReducer from "./componants/hooks/useReducer-hook/HookuseReducer";
 import LayoutEffectHooks from "./componants/hooks/useLayoutEffect/LayoutEffectHooks";
 import Usememo from "./componants/hooks/useMemoHook/Usememo";
 import UseCallbackHook from "./componants/hooks/useCallback/UseCallbackHook";
-function App() {
+import TodoList from "./a";
+import SearchFilterData from "./test-code/SearchFilterData";
+import { RefExam } from "./componants/ref/RefExam";
+
+function App(props) {
   const numbers = [1, 2, 3, 4, 5];
+  const items = [
+    { text: "Buy grocery", done: true },
+    { text: "Play guitar", done: false },
+    { text: "Romantic dinner", done: false },
+  ];
+
   return (
     <div className="App">
       <h1>Hello React</h1>
@@ -114,7 +124,20 @@ function App() {
       {/* useLayoutEffect hook */}
       {/* <LayoutEffectHooks /> */}
       {/* <Usememo /> */}
-      <UseCallbackHook />
+      {/* <UseCallbackHook /> */}
+      {/* <TodoList
+        items={items}
+        onListClick={(event) => console.log("List clicked!")}
+        onItemClick={(item) => {
+          console.log(item);
+        }}
+      /> */}
+
+      {/* filterdata */}
+      {/* <SearchFilterData />*/}
+
+      {/* ref */}
+      <RefExam />
     </div>
   );
 }
